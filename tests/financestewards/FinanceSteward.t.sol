@@ -6,7 +6,7 @@ import {GovernanceV3Ethereum} from 'aave-address-book/GovernanceV3Ethereum.sol';
 import {AaveV3Ethereum, AaveV3EthereumAssets} from 'aave-address-book/AaveV3Ethereum.sol';
 import {AaveV2Ethereum, AaveV2EthereumAssets} from 'aave-address-book/AaveV2Ethereum.sol';
 import {FinanceSteward, IFinanceSteward} from '../../src/financestewards/FinanceSteward.sol';
-import {CollectorUtils} from '../../src/financestewards/CollectorUtils.sol';
+import {CollectorUtils} from '../../src/CollectorUtils.sol';
 import {IERC20} from 'solidity-utils/contracts/oz-common/interfaces/IERC20.sol';
 import {Ownable} from 'solidity-utils/contracts/oz-common/Ownable.sol';
 import {ICollector} from 'aave-address-book/common/ICollector.sol';
@@ -14,7 +14,7 @@ import {MiscEthereum} from 'aave-address-book/MiscEthereum.sol';
 
 /**
  * @dev Test for Finance Steward contract
- * command: make test contract-filter=FinanceSteward
+ * command: make test-financesteward
  */
 
 contract FinanceSteward_Test is Test {
